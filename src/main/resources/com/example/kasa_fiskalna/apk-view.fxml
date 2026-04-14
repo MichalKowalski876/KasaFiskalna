@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kasa_fiskalna.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Nazwa" />
+   <TextField fx:id="nazwaTextField" promptText="Nazwa" />
+   <Label text="Wartość" />
+   <TextField fx:id="wartoscTextField" promptText="Wartość" />
+    <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="286.0">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <Button alignment="CENTER" onAction="#Paragon" prefHeight="20.0" prefWidth="80.0" text="Paragon" />
+        <Button alignment="CENTER" onAction="#Faktura" prefHeight="20.0" prefWidth="80.0" text="Faktura" />
+        <Button alignment="CENTER" onAction="#Historia" prefHeight="20.0" prefWidth="80.0" text="Historia" />
+    </ToolBar>
+    <TextArea fx:id="outputTextArea" editable="false" prefHeight="130.0" prefWidth="360.0" text="Wynik" />
+   <TextFlow prefHeight="200.0" prefWidth="200.0" />
+</VBox>
